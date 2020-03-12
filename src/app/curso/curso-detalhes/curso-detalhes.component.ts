@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursoDetalhesComponent implements OnInit {
 
-  constructor() { 
-    window.alert('Criando detalhes do curso');
+  constructor() {
   }
 
   ngOnInit(): void {

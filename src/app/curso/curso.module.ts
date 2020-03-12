@@ -7,13 +7,13 @@ import { CursoDetalhesComponent } from './curso-detalhes/curso-detalhes.componen
 @NgModule({
   declarations: [
     CursoComponent,
-    CursoDetalhesComponent    
+    CursoDetalhesComponent
   ],
   imports: [
     CommonModule
   ],
-  exports:[
+  exports: [
     CursoComponent
-      ]
+  ]
 })
 export class CursoModule { }
