@@ -10,7 +10,8 @@ export class EventBindingComponent implements OnInit {
   valorAtual: string = '';
   valorSalvo: string = '';
   isMouseOver: boolean = false;
-  nome: string = 'abc';
+  nome: string = '';
+
 
   constructor() { }
 
