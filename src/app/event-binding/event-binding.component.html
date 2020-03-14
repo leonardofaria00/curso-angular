@@ -1,32 +1,49 @@
-<article class="card">
-  <h2>Event Binding with Angular</h2>
-  <br />
-  <div #classe>
-    <button class="btn btn-primary" (click)="botaoClicado()">Me clique</button>
+<article>
+  <div class="card">
+    <h2>Event Binding with Angular</h2>
+    <br />
+    <button class="btn btn-primary col-sm-2" (click)="botaoClicado()">Me clique</button>
     <br />
     <br />
-    <input
-      class="form-control col-sm-3"
-      type="text"
-      #pegaInput
-      (keyup)="onKeyUp($event)"
-      (blur)="salvarDado(pegaInput.value)"
-    />
+    <input class="form-control col-sm-3" type="text" #pegaInput (keyup)="onKeyUp($event)"
+      (blur)="salvarDado(pegaInput.value)" />
     <p>Dado digitado: {{ valorAtual }}</p>
     <p>Dado salvo: {{ valorSalvo }}</p>
-    <span
-      (mouseover)="onMouseOver()"
-      (mouseout)="onMouseOver()"
-      [class.piscar]="isMouseOver"
-      >Pisca-pisca</span
-    >
+  </div>
+  <br>
+  <div class="card">
+    <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.piscar]="isMouseOver">Pisca-pisca</span>
   </div>
 </article>
 <br />
 <article class="card">
   <h2>Two-way Data Binding</h2>
   <br />
+  <div class="col-sm-6">
+    <div>
+      <label>Nome 1</label>
+      <input class="form-control" type="text" [value]="nome" (input)="nome = $event.target.value" />
+    </div>
+    <br>
+    <div>
+      <label>Nome 2</label>
+      <input class="form-control" type="text" [ngModel]="nome" (ngModelChange)="nome = $event" />
+    </div>
+    <br>
+    <div>
+      <label>Nome 3</label>
+      <input class="form-control" type="text" [(ngModel)]="nome" />
+    </div>
+    <br>
+    <p>Valor digitado: {{ nome }}</p>
+  </div>
+</article>
+<br>
+<article class="card">
+  <h2>Two-way Data Binding with Object</h2>
+  <br>
+  <input type="text" [(ngModel)]="pessoa.nome">
+  <input type="number" [(ngModel)]="pessoa.idade">
+  <p>Me chamo {{ pessoa.nome}}, tenho {{pessoa.idade}} anos.</p>
 
-  <input type="nome" name="nome" [value]="nome" (input)="nome = $event.target.value" />
-  <p>Value: {{ nome }}</p>
 </article>

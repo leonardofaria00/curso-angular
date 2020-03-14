@@ -7,12 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingComponent implements OnInit {
 
+  constructor() { }
+
   valorAtual: string = '';
   valorSalvo: string = '';
   isMouseOver: boolean = false;
-  nome: string = 'abc';
+  nome: string = '';
 
-  constructor() { }
+  pessoa: any = {
+    nome: '',
+    idade: ''
+  }
 
   ngOnInit(): void {
   }
@@ -27,11 +32,11 @@ export class EventBindingComponent implements OnInit {
 
   }
 
-  salvarDado(dado) {
+  salvarDado(dado: any) {
     this.valorSalvo = dado;
   }
 
-  onMouseOver() {
+  onMouseOverOut() {
     this.isMouseOver = !this.isMouseOver;
   }
 }
