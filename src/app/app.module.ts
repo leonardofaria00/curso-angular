@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CursoModule } from './curso/curso.module';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { MeuPrimeiroComponent } from './meu-componente/meu-primeiro.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 
 
@@ -13,7 +14,8 @@ import { MeuPrimeiroComponent } from './meu-componente/meu-primeiro.component';
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    OutputPropertyComponent
   ],
   imports: [
     BrowserModule,

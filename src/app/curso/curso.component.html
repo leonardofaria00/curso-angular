@@ -1,6 +1,6 @@
 <section>
   <article class="card">
-    <p>Lista de Cursos do Portal {{ nomePortal }}</p>
+    <p>Lista de Cursos do Portal <a href="{{ nomePortal }}">{{ nomePortal }}</a></p>
     <ul>
       <li *ngFor="let curso of cursos">
         {{ curso }}
@@ -11,7 +11,7 @@
   <br />
   <article class="card">
     <h4>Selecione uma Classe:</h4>
-    <select class="col-sm-3"  #classe (change)="0">
+    <select class="col-sm-3" #classe (change)="0">
       <option value="" selected>Selecione</option>
       <option value="alert-primary">Primary</option>
       <option value="alert-success">Sucesso</option>

@@ -16,7 +16,7 @@ export class CursoComponent implements OnInit {
   cursos: string[];
 
   constructor(private cursoService: CursoService) {
-    this.nomePortal = 'http://loiane.traning';
+    this.nomePortal = 'https://loiane.training/';
 
     this.cursos = cursoService.getCursos();
   }
