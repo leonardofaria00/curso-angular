@@ -7,6 +7,7 @@ import { CursoModule } from './curso/curso.module';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { MeuPrimeiroComponent } from './meu-componente/meu-primeiro.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { PropertyBindComponent } from './property-bind/property-bind.component';
 
 
 
@@ -15,7 +16,8 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
     AppComponent,
     MeuPrimeiroComponent,
     EventBindingComponent,
-    OutputPropertyComponent
+    OutputPropertyComponent,
+    PropertyBindComponent
   ],
   imports: [
     BrowserModule,

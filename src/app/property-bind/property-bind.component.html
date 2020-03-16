@@ -1,0 +1,14 @@
+<section>
+    <h3>Property Binding</h3>
+    <article>
+        <p>Nome: {{ nome }}</p>
+    </article>
+
+    <article>
+        <img src="{{ urlImagem }}">
+
+        <img [src]="urlImagem">
+
+        <img [src]="getImagem()">
+    </article>
+</section>
