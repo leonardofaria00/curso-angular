@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
     templateUrl: './meu-primeiro.component.html'
 
 })
-export class MeuPrimeiroComponent { }
+export class MeuPrimeiroComponent {
+    nomeDoCurso: string = 'Angular + Spring Boot';
+
+}

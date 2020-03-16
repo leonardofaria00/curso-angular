@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { CursoModule } from './curso/curso.module';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { MeuPrimeiroComponent } from './meu-componente/meu-primeiro.component';
-import { OutputPropertyComponent } from './output-property/output-property.component';
 import { PropertyBindComponent } from './property-bind/property-bind.component';
+import { InputOutputPropertyComponent } from './input-output-property/input-output-property.component';
+import { CicloVidaComponent } from './ciclo-vida/ciclo-vida.component';
 
 
 
@@ -16,8 +17,9 @@ import { PropertyBindComponent } from './property-bind/property-bind.component';
     AppComponent,
     MeuPrimeiroComponent,
     EventBindingComponent,
-    OutputPropertyComponent,
-    PropertyBindComponent
+    PropertyBindComponent,
+    InputOutputPropertyComponent,
+    CicloVidaComponent
   ],
   imports: [
     BrowserModule,

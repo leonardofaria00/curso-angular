@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PropertyBindComponent implements OnInit {
 
   nome: string = 'Leonardo Faria dos Santos';
-  urlImagem = 'http://lorempixel.com/400/200/sports';
+  urlImagem = 'https://picsum.photos/id/237/200/300';
 
 
   constructor() { }

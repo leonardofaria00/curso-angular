@@ -1,14 +1,14 @@
 <section>
-    <h3>Property Binding</h3>
-    <article>
-        <p>Nome: {{ nome }}</p>
-    </article>
+  <article>
+    <h3 class="card text-center">Property Binding</h3>
+    <p>Nome: {{ nome | uppercase }}</p>
+    <br />
+    <img src="https://picsum.photos/id/237/200/300" />
 
-    <article>
-        <img src="{{ urlImagem }}">
+    <img src="{{ urlImagem }}" />
 
-        <img [src]="urlImagem">
+    <img [src]="urlImagem" />
 
-        <img [src]="getImagem()">
-    </article>
+    <img [src]="getImagem()" />
+  </article>
 </section>

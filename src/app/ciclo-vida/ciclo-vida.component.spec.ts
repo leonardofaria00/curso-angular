@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OutputPropertyComponent } from './output-property.component';
+import { CicloVidaComponent } from './ciclo-vida.component';
 
-describe('OutputPropertyComponent', () => {
-  let component: OutputPropertyComponent;
-  let fixture: ComponentFixture<OutputPropertyComponent>;
+describe('CicloVidaComponent', () => {
+  let component: CicloVidaComponent;
+  let fixture: ComponentFixture<CicloVidaComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OutputPropertyComponent ]
+      declarations: [ CicloVidaComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OutputPropertyComponent);
+    fixture = TestBed.createComponent(CicloVidaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
