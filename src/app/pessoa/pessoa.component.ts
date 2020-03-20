@@ -11,9 +11,7 @@ export class PessoaComponent implements OnInit {
   pessoas: any[];
 
   constructor(private service: PessoaService) {
-    this.service
-      .listFormUser()
-      .subscribe(pessoas => this.pessoas = pessoas);
+    this.service.listFormUser().subscribe(pessoas => this.pessoas = pessoas);
   }
 
   ngOnInit(): void {
