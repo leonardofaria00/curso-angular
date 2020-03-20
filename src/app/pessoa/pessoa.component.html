@@ -1,0 +1,28 @@
+<h3 class="text-center">Tabela de Pessoas!</h3>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead class="thead-dark">
+      <tr class="text-center">
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Usuário</th>
+        <th scope="col">Email</th>
+        <th scope="col">Endereço</th>
+        <th scope="col">Phone</th>
+        <th>Opções</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let p of pessoas">
+      <tr class="text-center">
+        <th scope="row">{{ p.id }}</th>
+        <td>{{ p.name }}</td>
+        <td>{{ p.username }}</td>
+        <td>{{ p.email }}</td>
+        <td>{{ p.address.city }}</td>
+        <td>{{ p.phone }}</td>
+        <td>Editar | Excluir</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
