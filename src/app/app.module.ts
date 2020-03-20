@@ -11,6 +11,7 @@ import { InputOutputPropertyComponent } from './input-output-property/input-outp
 import { MeuPrimeiroComponent } from './meu-componente/meu-primeiro.component';
 import { PessoaComponent } from './pessoa/pessoa.component';
 import { PropertyBindComponent } from './property-bind/property-bind.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -28,7 +29,8 @@ import { PropertyBindComponent } from './property-bind/property-bind.component';
     BrowserModule,
     HttpClientModule,
     CursoModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
